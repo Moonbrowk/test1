@@ -1,34 +1,38 @@
 package test1;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
+
 /**
  * Created by User on 01.08.2017.
  */
 public class otest {
     public static void main(String[] args) throws InterruptedException {
 
-        Integer a = new Integer(1);
-        Integer b = new Integer(1);
-
-        System.out.println(a.intValue() == b.intValue()); //true
-        System.out.println(a.compareTo(b)); //true
-        System.out.println(a.equals(b)); // true
-        System.out.println(a == b); //false
-        int count = 0;
-        int s = 1;
-
-        while (count <= 60) {
-            s = stakan(s);
-           // Thread.sleep(00);
-            count++;
-        }
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
 
-        System.out.println(s);
-    }
 
-        public static int stakan(int x) throws InterruptedException {
-            x = x * 2;
-            return x;
+        System.out.println(bufferedReader.getClass());
+        System.out.println(bufferedReader.getClass().getName());
+        System.out.println(bufferedReader.getClass().getCanonicalName());
+        System.out.println(bufferedReader.getClass().getClass().getClass());
+        System.out.println(bufferedReader.getClass().getFields());
+        System.out.println(bufferedReader.getClass().getSimpleName());
+        System.out.println(bufferedReader.getClass().getSuperclass());
+
+        Map<Integer, Integer>  collection = new HashMap<>(20, 0.90f);
+        Collection<Integer> collection1 = new HashSet<>(33, 0.5f);
+
+
+
+        System.out.println(collection.get(null));
+
+
+
+
+
 
 
     }
